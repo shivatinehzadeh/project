@@ -5,7 +5,7 @@ from .models import Book,Category,Suggestion,Profile,Reserve
 class PostAdmin(admin.ModelAdmin):
     list_display = ('name','brand')
     list_filter = ('name',)
-    search_fields = ('name','brand')
+    search_fields = ('name',)
 admin.site.register(Book,PostAdmin)
 
 
